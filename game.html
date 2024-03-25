@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>N-Queens Chess Game</title>
+</head>
+<body>
+    <h1>N-Queens Chess Game</h1>
+    <div id="board"></div>
+    
+    <div class="status">
+        <p id="queensLeft">Queens left to place: <span id="queensCount"> </span></p>
+    </div>
+    
+    <div class="buttons">
+        <label for="boardSize">Board Size:</label>
+        <input type="number" id="boardSize" value="8" min="1">
+        <button onclick="updateBoardSize()" id="Update">Update Board</button>
+        <button onclick="resetBoard()" id="reset">Reset</button>
+        <button onclick="undoMove()" id="undo">Undo</button>
+        <div class="display" id="display">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
